@@ -1,0 +1,100 @@
+<ion-navbar *navbar>
+    <button menuToggle>
+        <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title style="cursor: pointer; cursor: hand;" (click)="goToProfile()">Rockwell Collins</ion-title>
+    <!--<img src="build/assets/images/rockwell/rockwell-menu.png" style="float:right; margin-top:-25px;margin-right:25px" />-->
+    
+</ion-navbar>
+  
+<ion-content>
+    
+   <!-- compnay Header -->
+  <div class="row" style="height:40px;cursor: pointer; cursor: hand;" (click)="goToProfile()" >
+          <img src="build/assets/images/rockwell/rockwell-menu.png"   style="float:left;margin-top:5px;margin-left:5px" />
+          <ion-label style="float:right;"> 5/2004 - 4/2009  </ion-label>
+  </div>
+    
+          
+    <!--COREsim Architecture Team for Commercial Flight Simulators-->
+   <ion-list>
+      <ion-item>
+        <expander style="margin:20px; font-size:22px" title="Next Generation Commercial Flight Simulators">
+
+            <div class="card">
+                <ion-item>
+                    <div class="video-container">
+                        <iframe src="https://youtube.com/embed/xLw-npjWKJ0" frameborder="0" width="300" height="300"></iframe>
+                    </div>
+                </ion-item>
+            </div>
+            <div class="card">
+                <ion-item>
+                    <div class="video-container">
+                        <iframe src="https://youtube.com/embed/SlXrDZIY7fg" frameborder="0" width="300" height="300"></iframe>
+                    </div>
+                </ion-item>
+            </div>
+
+            <ion-text style="font-size:12px;white-space:normal;" class="item-text-wrap">
+                Instructor Associate and Lesson Plan Associate– Visual Studio 2008/WPF/C#/.Net/MultiThreaded
+            </ion-text>
+        
+            <ia-tiles [activeColor]="activeColor" [activeTextColor]="activeTextColor"
+                    [title]="title" [subTitle]="subTitle"
+                    [dataService]="projectService">
+            </ia-tiles>
+        </expander>
+      </ion-item>
+        
+    <!--EA6B Virtual Cockpit Emulator (VCE) -->
+    <ion-item>
+        <expander style="margin:20px; font-size:22px" title="EA6B Virtual Cockpit Emulator (VCE)">
+                <ion-text style="font-size:12px;white-space:normal;" class="item-text-wrap">
+                    The EA6B Virtual Cockpit Emulator is a desktop trainer that simulates the real EA6B hardware
+                     through the use of image processing.
+                </ion-text>
+                <br><br>
+                <ion-text style="font-size:12px;white-space:normal;" class="item-text-wrap">
+                        Snapshots are not available due to security clearance restrictions
+                </ion-text>
+        </expander>
+        
+        <ion-text style="font-size:12px;white-space:normal;" class="item-text-wrap">
+            Visual Studio 2005/MFC/C++/TCP-IP
+        </ion-text>
+     
+     </ion-item>
+     
+     
+             
+    <!-- EA6B MTU Instructor Operator Station (IOS) -->
+    <ion-item>
+        <expander style="margin:20px; font-size:22px" title="EA6B MTU Instructor Operator Station (IOS)">
+                <ion-text style="font-size:12px;white-space:normal;" class="item-text-wrap">
+                    This IOS went through the complete government contract project lifecycle PDR/CDR – Preliminary/Critical
+                     Design Review, NPE-Naval Preliminary Evaluation, CPI/GPI Contractor/Government Preliminary Inspection,
+                      CFI/GFI-Contractor/Government Final Inspection, RFT-Ready for Training.                         
+                </ion-text>
+                <br><br>
+                <ion-text style="font-size:12px;white-space:normal;" class="item-text-wrap">
+                        Snapshots are not available due to security clearance restrictions
+                        
+                </ion-text>
+        </expander>
+        
+        <ion-text style="font-size:12px;white-space:normal;" class="item-text-wrap">
+            Visual Studio 2005/MFC/C++/TCP-IP
+        </ion-text>
+     
+     </ion-item>
+       
+     
+    </ion-list> 
+    
+</ion-content>
+
+
+
+
+

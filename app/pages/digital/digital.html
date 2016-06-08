@@ -1,0 +1,88 @@
+<ion-navbar *navbar>
+  <button menuToggle>
+    <ion-icon name="menu"></ion-icon>
+  </button>
+  <ion-title style="cursor: pointer; cursor: hand;" (click)="goToProfile()" >Digital Equipment Corporation </ion-title>
+   <!--<img src="build/assets/images/digital/digital-menu.png" style="float:right; margin-top:-25px;margin-right:25px" />-->
+</ion-navbar>
+     
+  <!--<a href="https://g.co/kgs/giAX4c"></>-->
+  
+  
+<ion-content>
+  <!-- compnay Header -->
+  <div class="row" style="height:40px;cursor: pointer; cursor: hand;" (click)="goToProfile()" >
+          <img src="build/assets/images/digital/digital-menu.png"   style="float:left;margin-top:5px;margin-left:15px" />
+          <ion-label style="float:right;">  6/1987 - 2/1997  </ion-label>
+  </div>
+  
+  <ion-item>
+    <ion-text style="font-size:12px;white-space:normal" class="item-text-wrap">
+  At its peak, the company was the second largest company in the computer industry, employed more than 120,000 people worldwide, and earned more than $14 billion in revenue.  Digital was founded by Kenneth Olsen, an electronics engineers at the Massachusetts Institute of Technology (MIT), with the idea of building a family of high-performance, low-cost computers.  The company’s product line was broad, far reaching and innovative.  It included minicomputers, workstations, the largest used networking system in the world, DECnet, clustering, a vast library of software products and the first 64 bit computer chip.                         
+    </ion-text>    
+  </ion-item>
+
+  
+    <!-- ObjectBroker Desktop Connection (DTC)-  C++/ActiveX CORBA ActiveX Controls -->
+    <ion-item>
+        <expander style="margin:20px; font-size:22px" title="ObjectBroker Desktop Connection (DTC)">
+                <ion-text style="font-size:12px;white-space:normal;" class="item-text-wrap">
+               DTC provided Web Access to remote CORBA objects (ObjectBroker servers). DTC automatically generated a GUI at runtime for these remote objects.  Used ActiveXDocument technology to embed objects in shrink wrap applications and ActiveXControl technology to embed objects into various development environments e.g. ActiveX Control Pad, Visual Basic, Visual C++ and Web Browsers.                        
+                </ion-text>
+        </expander>
+        
+        <ion-text style="font-size:12px;white-space:normal;" class="item-text-wrap">
+             C++/ActiveX CORBA ActiveX Controls
+        </ion-text>
+     
+     </ion-item>
+  
+      <!-- Alta Vista Unplugged - C++/MFC/OLE Web Based Cache Manager Component -->
+    <ion-item>
+        <expander style="margin:20px; font-size:22px" title="Alta Vista Unplugged">
+                <ion-text style="font-size:12px;white-space:normal;" class="item-text-wrap">
+                  Technical lead that designed and implemented the entire Web Forum Cache Manager Component used for
+                   viewing page content. 
+                </ion-text>
+              
+                <ion-text style="font-size:12px;white-space:normal;" class="item-text-wrap">
+                  Prototyped/Designed/Implemented GUI, reused the caching component designed in DBMobilizer,
+                     integrated component with Web Browsers. (Netscape/IExplorer)                      
+                </ion-text>
+        </expander>
+        
+        <ion-text style="font-size:12px;white-space:normal;" class="item-text-wrap">
+             C++/MFC/OLE Web Based Cache Manager Component
+        </ion-text>
+     
+     </ion-item>
+  
+      <!-- Mobile Software Business/DBMobilizer Product-C++/Client-OL2 Full Server -->
+    <ion-item>
+        <expander style="margin:20px; font-size:22px" title="Mobile Software Business/DBMobilizer Product">
+                <ion-text style="font-size:12px;white-space:normal;" class="item-text-wrap">
+                  DBMobilizer is a Full OLE2 Server application. Supports in-place activation and an OLE Automation Interface to perform unattended reconciles.   DBMobilizer allows the user to keep a subset of a server-based database on a portable  computer and synchronizes the databases when communication is established.
+                </ion-text>
+
+        </expander>
+        
+        <ion-text style="font-size:12px;white-space:normal;" class="item-text-wrap">
+            C++/Client-OL2 Full Server
+        </ion-text>
+     
+     </ion-item>
+
+
+  <!--<ion-list>
+    <button ion-item *ngFor="#item of items" (click)="itemTapped($event, item)">
+      <ion-icon name="{{item.icon}}" item-left></ion-icon>
+      {{item.title}}
+      <div class="item-note" item-right>
+        {{item.note}}
+      </div>
+    </button>
+  </ion-list>
+  <div *ngIf="selectedItem" padding>
+    You navigated here from <b>{{selectedItem.title}}</b>
+  </div>-->
+</ion-content>

@@ -1,0 +1,13 @@
+﻿
+<!-- 
+    blacktriangledown = '&#9660;'
+    blacktriangleright = '&#9654;'; 
+      -->
+<div class="expander">
+    <h3 style="font-weight:bold;cursor: pointer; cursor: hand;word-wrap:break-word;white-space:normal" (click)="toggle($event)" class="expander__title">
+        {{ visible ? '&#9660;' : '&#9654;' }} {{title}}
+    </h3>
+    <div [hidden]="!visible" class="expander__content">
+        <ng-content></ng-content>
+    </div>
+</div>

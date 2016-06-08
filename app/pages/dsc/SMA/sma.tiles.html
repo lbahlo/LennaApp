@@ -1,0 +1,35 @@
+﻿
+
+    
+  <div style="margin-left:-20px; float:left; background-color:white" class="container-fluid">
+
+    <ul class="nav nav-pills">
+        <div  style="margin:10px; float:left; width:250px; background-color:whhite"  *ngFor="let item of items"
+            [class.active]="item.active">
+            <div  style="width:250px;">
+                
+                <div style="height:74px; font-size:30px">
+                    <!--<a  (click)="toggleItem(item)">{{item.companyName}}</a>-->
+                    <!--<a (click)="onImageClick(item)">{{item.companyName}}</a>-->
+                </div>
+
+                <div style="width:250px; height:250px">
+                    <img  [src]="item.imageUrl"  width="250" height="250"  (click)="onImageClick(item)" />
+                    <!--<img [src]="item.imageUrl" width="250" height="250" (click)="onImageClick(item)" />-->
+                </div>
+                
+                <div style="width:250px;">
+
+                    <!--<textarea style="margin-top:2px; width:250px;" rows="1"> {{item.description}}</textarea>-->
+                    <h3  style="width:250px;"> {{item.description}}</h3>
+
+                </div>
+                
+            </div>
+        </div>
+    </ul>
+
+
+</div>
+
+

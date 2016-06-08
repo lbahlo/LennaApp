@@ -1,0 +1,128 @@
+<ion-navbar *navbar>
+  <button menuToggle>
+    <ion-icon name="menu"></ion-icon>
+  </button>
+  <ion-title style="cursor: pointer; cursor: hand;" (click)="goToProfile()" >Digital Signal Corporation</ion-title>
+  <!--<img src="build/assets/images/dsc/dsc-menu.png" style="float:right; margin-top:-25px;margin-right:25px" />-->
+</ion-navbar>
+
+
+
+<ion-content>
+  <!-- compnay Header -->
+  <div class="row" style="height:40px;cursor: pointer; cursor: hand;" (click)="goToProfile()" >
+          <img src="build/assets/images/dsc/dsc-menu.png"   style="float:left;margin-top:5px;" />
+          <ion-label style="float:right;"> 2/2013 - Present  </ion-label>
+  </div>
+  
+  <!--<div class="row" style="height:40px;cursor: pointer; cursor: hand;" (click)="goToProfile()" >
+          <img src="build/assets/images/dsc/dsc-menu.png" (click)="goToProfile()"  style="float:left;cursor: pointer; cursor: hand;margin-top:5px;margin-right:0px" />
+          <ion-label style="float:right;cursor: pointer; cursor: hand;"  > 2/2013 - Present  </ion-label>
+  </div>-->
+
+
+  <ion-list>
+
+       
+    <!--FIAPP Project-->
+    <ion-item>
+      <expander style="margin:20px; font-size:22px" title="FIAPP - Facial Intelligent App" (open)="onEditOn($event)" (close)="onEditOff($event)">
+         <fiapp-tiles [activeColor]="activeColor" [activeTextColor]="activeTextColor"
+            [title]="title" [subTitle]="subTitle"
+            [dataService]="projectService">
+        </fiapp-tiles>
+      </expander>
+      
+     <ion-text style="font-size:12px;white-space:normal;" class="item-text-wrap">
+        Ionic Framework/AngularJS/.NET Restful WCF Service/Android and IOS Hybrid Mobile Application
+     </ion-text>
+ 
+      
+      <!--<textarea  style="spellcheck=false;resize:none;border:none;font-size:12px; margin-top:2px; width:326px" rows="3" >
+      FIApp –  Ionic Framework/AngularJS/.NET Restful
+      WCF Service/Android and IOS Hybrid Mobile
+      Application
+     </textarea>-->
+      
+     </ion-item>
+       
+    <!--DCAF Project-->
+    <ion-item>
+      <expander style="margin:20px; font-size:22px" title="DCAF - Database Conversion Analysis Fraud" (open)="onEditOn($event)" (close)="onEditOff($event)">
+        <dcaf-tiles [activeColor]="activeColor" [activeTextColor]="activeTextColor"
+            [title]="title" [subTitle]="subTitle"
+            [dataService]="projectService">
+        </dcaf-tiles>
+      </expander>
+      <ion-text style="font-size:12px;white-space:normal;" class="item-text-wrap">
+        Durandal SPA/knockout.js,threejs,d3js/jqWidgets/JavaScript/RestfulWebServices/Web Application
+     </ion-text>
+      
+     </ion-item>
+     
+    <!--SMA Project-->
+    <ion-item>
+      <expander style="margin:20px; font-size:12px" title="SMAApp - System Management Application for Watch Lists" (open)="onEditOn($event)" (close)="onEditOff($event)">
+        <sma-tiles [activeColor]="activeColor" [activeTextColor]="activeTextColor"
+            [title]="title" [subTitle]="subTitle"
+            [dataService]="projectService">
+        </sma-tiles>
+      </expander>
+     <ion-text style="font-size:12px;white-space:normal;" class="item-text-wrap">
+        Angular2/.NET Core1/.NET Restful Web Services/Target Platforms- Mobile and Desktop 
+     </ion-text>
+    </ion-item>
+     
+     
+  </ion-list>
+
+    <!--<nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <ul class="nav navbar-nav">
+                <!--<li>
+                    <h3 *ngIf="isHeader" style="margin:2px; margin-left:-40px">{{ 'Bewls' | translate:{value:bewlsTitle} }} {{selectedBewlDescription}}</h3>
+                </li>
+                <li> <p>&#x2007;</p></li>
+                <li> <p>&#x2007;</p></li>
+                <li> <p>&#x2007;</p></li>-->
+                <!--<li> <p>&#x2007;</p></li>
+                <li>-->
+                    <!--<div *ngIf="true" class="row">
+                        <expander style="font-size:22px" title="SMA" (open)="onEditOn($event)" (close)="onEditOff($event)">
+                         <ion-content>
+                             <p>CONTENT FOR SMA </p>
+                       
+                          <ion-content>
+                        </expander>
+                    </div>-->
+                 <!--</li>
+            </ul>
+        </div>
+    </nav>-->
+
+    <!--<ion-view title="DSC Project List">
+        <ion-content>
+            <ion-list>
+                <ion-item class="item" ng-repeat="project in projects">
+                    <a href="#/details/{{project.id}}">{{project.stName}} {{person.lastName}}</a>
+                </ion-item>
+            </ion-list>
+        </ion-content>
+    </ion-view>-->
+
+  <!--<ion-list>
+    <button ion-item *ngFor="#item of items" (click)="itemTapped($event, item)">
+      <ion-icon name="{{item.icon}}" item-left></ion-icon>
+      {{item.title}}
+      <div class="item-note" item-right>
+        {{item.note}}
+      </div>
+    </button>
+  </ion-list>
+  <div *ngIf="selectedItem" padding>
+    You navigated here from <b>{{selectedItem.title}}</b>
+  </div>-->
+</ion-content>
+
+
+

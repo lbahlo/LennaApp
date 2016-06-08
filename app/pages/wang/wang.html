@@ -1,0 +1,55 @@
+<ion-navbar *navbar>
+  <button menuToggle>
+    <ion-icon name="menu"></ion-icon>
+  </button>
+  <ion-title style="cursor: pointer; cursor: hand;" (click)="goToProfile()">Wang Laboratories</ion-title>
+   <!--<img src="build/assets/images/wang/wang-menu.png" style="float:right; margin-top:-25px;margin-right:25px" />-->
+</ion-navbar>
+
+    
+
+<ion-content>
+  
+  <!-- compnay Header -->
+  <div class="row" style="height:40px;cursor: pointer; cursor: hand;" (click)="goToProfile()" >
+          <img src="build/assets/images/wang/wang-menu.png"   style="float:left;margin-top:5px;margin-left:5px" />
+          <ion-label style="float:right;">  9/1983 - 6/1987 </ion-label>
+  </div>
+  
+  <ion-item>
+     <ion-text style="font-size:12px;white-space:normal;" class="item-text-wrap">
+            Wang Labs was founded by An Wang, a Harvard University PhD in applied physics.  The company was a worldwide provider of computer-based office information processing systems including data, text, image and voice processing systems, as well as networking products.  It reached $2 billion in sales and found its largest success in distributed word processing systems and small networked business computers.                         
+     </ion-text>    
+  </ion-item>
+
+    <!-- Image and Graphic PC Based Editors - All written in C -->
+    <ion-item>
+        <expander style="margin:20px; font-size:22px" title="Image and Graphic PC Based Editors">
+                <ion-text style="font-size:12px;white-space:normal;" class="item-text-wrap">
+                  Senior Software Engineer responsible for functional specification, design specification, coding and testing of editors. 
+                   Worked on and completed four image/graphic based editors, written in C.	Promoted twice within a period of four years.	
+                   Project Lead; managed a team of 5 engineers on two projects.
+                </ion-text>
+
+        </expander>
+        
+        <ion-text style="font-size:12px;white-space:normal;" class="item-text-wrap">
+             All written in C
+        </ion-text>
+     
+     </ion-item>
+
+  
+  <!--<ion-list>
+    <button ion-item *ngFor="#item of items" (click)="itemTapped($event, item)">
+      <ion-icon name="{{item.icon}}" item-left></ion-icon>
+      {{item.title}}
+      <div class="item-note" item-right>
+        {{item.note}}
+      </div>
+    </button>
+  </ion-list>
+  <div *ngIf="selectedItem" padding>
+    You navigated here from <b>{{selectedItem.title}}</b>
+  </div>-->
+</ion-content>

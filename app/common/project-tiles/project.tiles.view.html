@@ -1,0 +1,42 @@
+﻿
+<div class="centerTiles">
+    
+ <!--<div  style="width:100%; margin-left:-30px; background-color:white" class="container-fluid">-->
+<!--
+<div class="inlineblock" style="width:100%; margin-left:0px; background-color:pink" >-->
+
+ <div  style="width:100%; margin-left:-30px; background-color:pink" >
+
+
+
+    <ul class="nav nav-pills">
+        <div  style="margin:10px; float:left; width:200px; border-style: solid; border-color:grey; border-width: 1px; background-color:whhite"  *ngFor="let item of items"
+            [class.active]="item.active">
+            <div  style="width:200px;">
+                
+                <!--<div style="height:74px; font-size:30px">-->
+                    <!--<a  (click)="toggleItem(item)">{{item.companyName}}</a>-->
+                    <!--<a (click)="onImageClick(item)">{{item.companyName}}</a>-->
+                <!--</div>-->
+
+                <div style="cursor: pointer; cursor: hand; width:200px; height:200px">
+                    <img  [src]="item.imageUrl"  width="200" height="200"  (click)="onImageClick(item)" />
+                    <!--<img [src]="item.imageUrl" width="200" height="200" (click)="onImageClick(item)" />-->
+                </div>
+                
+                <div style="width:200px;">
+
+                    <!--<textarea style="margin-top:2px; width:200px;" rows="1"> {{item.description}}</textarea>-->
+                    <!--<h3  style="width:200px;"> {{item.description}}</h3>-->
+
+                </div>
+                
+            </div>
+        </div>
+    </ul>
+
+
+  </div>
+
+
+</div>

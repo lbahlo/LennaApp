@@ -1,0 +1,32 @@
+<ion-menu id="leftMenu"  [content]="content">
+
+  <ion-toolbar>
+    <ion-title>Experience</ion-title>
+  </ion-toolbar>
+
+  <ion-content>
+    <ion-list>
+      <!--<button ion-item *ngFor="#p of pages" (click)="openPage(p)">
+        {{p.title}}
+      </button>-->
+      
+           <!--<img  src="build/assets/images/ljbsmall.png"  width="32" height="32"" />-->
+              <!--<ion-icon name='star'></ion-icon>-->
+      <ion-button  menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">
+        <div>
+           <img [src]="p.icon" />
+           <div style="float:right; margin-top:6px">
+               {{p.title}}
+           </div>
+        </div>
+      </ion-button>
+      
+    </ion-list>
+  </ion-content>
+
+</ion-menu>
+
+<ion-nav id="nav" [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>
+
+
+

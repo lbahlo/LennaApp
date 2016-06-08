@@ -1,0 +1,75 @@
+<ion-navbar *navbar>
+  <button menuToggle>
+    <ion-icon name="menu"></ion-icon>
+  </button>
+  <ion-title style="cursor: pointer; cursor: hand;" (click)="goToProfile()">ITT Excelis  </ion-title>
+  <!--<img src="build/assets/images/itt/itt-menu.png" style="float:right; margin-top:-25px;margin-right:25px" />-->
+</ion-navbar>
+
+ <ion-content>
+  <!-- compnay Header -->
+  <div class="row" style="height:40px;cursor: pointer; cursor: hand;" (click)="goToProfile()" >
+          <img src="build/assets/images/itt/itt-menu.png"   style="float:left;margin-top:5px;margin-left:5px" />
+          <ion-label style="float:right;">  4/2009 - 2/2013  </ion-label>
+  </div>
+   
+     <ion-list>
+       
+     <!--ExecVue-->
+    <ion-item>
+      <expander style="margin:20px; font-size:12px" title="ExecVue  Dashboard for  Symphony  OpsVue" (open)="onEditOn($event)" (close)="onEditOff($event)">
+        <execvue-tiles [activeColor]="activeColor" [activeTextColor]="activeTextColor"
+            [title]="title" [subTitle]="subTitle"
+            [dataService]="projectService">
+        </execvue-tiles>
+      </expander>
+      <ion-text style="font-size:12px;white-space:normal;" class="item-text-wrap">
+          Netbeans/Luciad/JIDE/Java/Swing
+      </ion-text>
+    </ion-item>
+       
+       
+    <!--ADI Project-->
+    <ion-item>
+      <expander style="margin:20px; font-size:22px" title="ADI " (open)="onEditOn($event)" (close)="onEditOff($event)">
+         <adi-tiles [activeColor]="activeColor" [activeTextColor]="activeTextColor"
+            [title]="title" [subTitle]="subTitle"
+            [dataService]="projectService">
+        </adi-tiles>
+      </expander>
+      
+     <ion-text style="font-size:12px;white-space:normal;" class="item-text-wrap">
+        PHP/CodeIgniter/JavaScript/Web Application
+     </ion-text>
+     
+     </ion-item>
+       
+    <!--TPM Viewer-->
+    <ion-item>
+      <expander style="margin:20px; font-size:22px" title="TPM Viewer" (open)="onEditOn($event)" (close)="onEditOff($event)">
+        <tpmviewer-tiles [activeColor]="activeColor" [activeTextColor]="activeTextColor"
+            [title]="title" [subTitle]="subTitle"
+            [dataService]="projectService">
+        </tpmviewer-tiles>
+      </expander>
+      <ion-text style="font-size:12px;white-space:normal;" class="item-text-wrap">
+        Visual Studio 2008/Silverlight/C#/.Net/WCF Services/PRISM/MySql DB
+     </ion-text>
+      
+     </ion-item>
+     
+  </ion-list>
+   
+  <!--<ion-list>
+    <button ion-item *ngFor="#item of items" (click)="itemTapped($event, item)">
+      <ion-icon name="{{item.icon}}" item-left></ion-icon>
+      {{item.title}}
+      <div class="item-note" item-right>
+        {{item.note}}
+      </div>
+    </button>
+  </ion-list>
+  <div *ngIf="selectedItem" padding>
+    You navigated here from <b>{{selectedItem.title}}</b>
+  </div>-->
+</ion-content>

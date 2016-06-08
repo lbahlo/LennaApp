@@ -1,0 +1,47 @@
+.getting-started {
+    
+    h3,h1 {
+        text-align:center;
+    }
+    
+    .centerText {
+        text-align:center;
+    }
+
+    ion-card {
+        width:160px;
+        height:160px;
+    }
+    
+ .centerDiv {
+    border: 0 solid red;
+    margin: 0 auto;
+    width: 160px;
+ }
+ 
+  .thumbnail {
+        margin:5px; margin-left:10px;
+        width:140px;
+        height:150px;
+    }
+  
+    p {
+    margin: 20px 0;
+    line-height: 22px;
+    font-size: 16px;
+    }
+    .italic  {
+    font-family: Georgia, Serif;
+    font-style: italic;
+    color: #666;
+    }
+
+    h2 {
+    font-family: "Simonetta", "Trebuchet MS", Arial, sans-serif;
+    color: #484848;
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    text-decoration: underline;
+    }
+
+}

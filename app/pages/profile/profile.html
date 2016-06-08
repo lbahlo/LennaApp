@@ -1,0 +1,50 @@
+ <!--<img [src]="build/assets/images/ljb-menu.png" />-->
+<ion-navbar *navbar>
+    <button menuToggle>
+        <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title style="width:80%" >Lenna Bahlo</ion-title>
+    <!--<img src="build/assets/images/ljb-menu.png" style="float:right; margin-top:-25px;margin-right:25px" />-->
+</ion-navbar>
+
+<ion-content padding class="getting-started">
+    <h3>3411 Cedar Crest Lane</h3>
+    <h3>Fairfax, VA  22033</h3>
+    <h3>703.477.7110(Cell)</h3>
+    <h3>E-mail: <a href="mailto:lbahlo@verizon.net">lbahlo@verizon.net</a></h3>
+    <div class="centerDiv">
+        <ion-card>
+            <img class="thumbnail" src="build/assets/images/ljbSmall.png" />
+            <ion-card-content>
+            </ion-card-content>
+        </ion-card>
+    </div>
+
+    <h1>Summary</h1>
+    <h3 class="centerText">
+        Software Engineer experienced in Object Oriented Technologies, Graphical User Interfaces,
+        Mobile, Web and Desktop Application Development.  Strength is front-end client side
+        visual software development.
+    </h3>
+    
+    <software></software>
+    
+    <education></education>
+    
+
+  
+<div>
+    <!--<h1>Test tiles container</h1>-->
+  
+ 
+        <project-tiles [activeColor]="activeColor" [activeTextColor]="activeTextColor"
+            [title]="title" [subTitle]="subTitle"
+            [dataService]="projectService">
+        </project-tiles>
+    
+  
+
+</div>
+
+  
+</ion-content>
