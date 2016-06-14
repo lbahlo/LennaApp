@@ -238,7 +238,12 @@ import { ProjectTiles } from '../common/project-tiles/project.tiles';
     
               { "companyName": "", "name":"", "url": "build/assets/images/dsc/SMA/sma-import.png", "routeName": "", "description": "" },
 
-              { "companyName": "", "name":"", "url": "build/assets/images/dsc/SMA/RoughDraftBewlDeploy.png", "routeName": "", "description": "" },
+              { "companyName": "", "name":"", "url": "build/assets/images/dsc/SMA/BewlsManager.png", "routeName": "", "description": "" },
+ 
+       //       { "companyName": "", "name":"", "url": "build/assets/images/dsc/SMA/RoughDraftBewlDeploy.png", "routeName": "", "description": "" },
+ 
+              { "companyName": "", "name":"", "url": "build/assets/images/dsc/SMA/empty.png", "routeName": "", "description": "" },
+            { "companyName": "", "name":"", "url": "build/assets/images/dsc/SMA/empty.png", "routeName": "", "description": "" },
                          
          ]);
          
